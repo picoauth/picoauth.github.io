@@ -833,7 +833,7 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
 <h1 id="1-plugin-installation">1) Plugin installation</h1>
 <h2 id="installation-using-composer">Installation using composer</h2>
 <p>If your Pico CMS has been installed using composer (using <code>composer create-project picocms/pico-composer</code>), PicoAuth plugin can be easily installed by running the following command in the root of your Pico installation.</p>
-<pre class="hljs">composer <span class="hljs-keyword">install</span> tumapav3/pico-auth</pre><h2 id="installation-without-composer">Installation without composer</h2>
+<pre class="hljs">composer <span class="hljs-keyword">install</span> picoauth/picoauth</pre><h2 id="installation-without-composer">Installation without composer</h2>
 <p>Installing PicoAuth plugin without composer is not recommended as it makes it difficult to receive updates. It can be used for example to try out the plugin if composer is not available. Such an installation can be done by extracting the plugin archive to the <code>plugins/</code> directory of your Pico CMS installation so the files of the plugin will be located under <code>plugins/PicoAuth/</code>.</p>
 <h1 id="2-plugin-configuration">2) Plugin configuration</h1>
 <p>After the plugin is present, navigate to PicoAuth installer on <code>https://www.YourPicoSite.com/?PicoAuth</code>. It will check your server configuration and walk you through a selection of components you want to include. After the plugin is configured, you can start using the selected modules - a guide for each of them is on separate pages:</p>
@@ -844,14 +844,7 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
 <li>PageLock</li>
 </ul>
 <hr>
-<h5 id="note-on-composer-installation-">NOTE on composer installation:</h5>
-<p>Package is not yet released on Packagist.org due to its closed-source development phase. To make this method work, the project repository needs to be added as a composer vcs repository to the Pico&#39;s <code>composer.json</code>. Composer will then clone the plugin from the git repository.</p>
-<pre class="hljs"><span class="hljs-string">"repositories"</span>: [
-    {
-        <span class="hljs-string">"type"</span>: <span class="hljs-string">"vcs"</span>,
-        <span class="hljs-string">"url"</span>: <span class="hljs-string">"git<span class="hljs-variable">@gitlab</span>.fit.cvut.cz:tumapav3/pico-auth.git"</span>
-    },
-],</pre><h1 id="picoauth-security">PicoAuth security</h1>
+<h1 id="picoauth-security">PicoAuth security</h1>
 <p>The level security of security depends on a proper configuration. The following points should be considered:</p>
 <ul>
 <li>Config files and Content files not accessible<ul>
